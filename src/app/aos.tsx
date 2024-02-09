@@ -5,14 +5,14 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 export const AOSInit = () => {
-    useEffect(() => {
-        AOS.init({
-          offset: 100,
-          duration: 700,
-          easing: 'ease-in',
-          delay: 200,
-        });
-      });
+      useEffect(() => {
+        AOS.init(
+          {
+            duration: 700,
+            easing: 'ease-in',
+          }
+        )
+      })
 
   return null
 }
