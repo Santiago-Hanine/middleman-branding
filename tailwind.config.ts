@@ -23,7 +23,10 @@ const config: Config = {
           '50%': { opacity: "0" },
           '100%': { opacity: "1" },
         }
-      }
+      },
+      backgroundImage: {
+        'office': "url('../../public/office.png')",
+      },
     },
   },
   plugins: [],
