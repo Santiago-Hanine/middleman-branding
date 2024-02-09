@@ -3,13 +3,14 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <div className='border-x-4 border-x-blue flex flex-col gap-14 mx-24 text-center mt-20 pt-8 pb-8'>
-        <h1 data-aos="fade-up" data-aos-duration="600" className='text-5xl font-black'>
+    <div className='md:border-x-4 border-x-2 border-x-blue flex flex-col gap-10 md:gap-14 mx-4 md:mx-12 lg:mx-24 text-center px-4 md:mt-40 mt-40 pt-8 pb-8'>
+        
+        <h1 data-aos="fade-up" data-aos-duration="600" className='text-2xl md:text-4xl lg:text-5xl font-black'>
             Maximiza el crecimiento de tu empresa con nuestras innovadoras estrategias de marketing digital
         </h1>
 
-        <p data-aos="fade-up" data-aos-duration="700" data-aos-delay="400" className='text-lg font-bold'>
-            Nos dedicamos a potenciar el crecimiento de nuestros clientes y colaboradores, impulsando resultados tangibles <br /> en el mundo digital.
+        <p data-aos="fade-up"  className='md:text-lg font-bold text-center'>
+            Nos dedicamos a potenciar el crecimiento de nuestros clientes y colaboradores, impulsando resultados tangibles <span className='hidden lg:inline'><br /></span> en el mundo digital.
         </p>
 
         <Link href="./contacto">
