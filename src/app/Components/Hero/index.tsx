@@ -3,7 +3,7 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <div className='border-x-4 border-x-blue flex flex-col gap-10 md:gap-14 mx-4 md:mx-12 lg:mx-24 text-center px-4 md:mt-20 mt-20 pt-8 pb-8'>
+    <div className='border-x-4 border-x-blue flex flex-col gap-10 md:gap-14 mx-4 md:mx-12 lg:mx-24 text-center px-4 md:mt-20 mt-14 pt-8 pb-8'>
         
         <h1 data-aos="fade-up" data-aos-duration="600" className='max-w-[55ch] mx-auto text-2xl md:text-4xl lg:text-5xl font-black'>
             Maximiza el crecimiento de tu empresa con nuestras innovadoras estrategias de marketing digital
