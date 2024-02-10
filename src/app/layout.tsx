@@ -10,8 +10,8 @@ export const metadata: Metadata = {
   keywords: "marketing digital, branding, creadores de contenido, estrategias digitales, agencia de marketing",
   category: "Marketing",
   openGraph:{
-    images: ['./public/logo.jpg']
-  }
+    images: ['./logo.jpg']
+  },
 }
 
 
