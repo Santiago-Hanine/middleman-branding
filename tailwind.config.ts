@@ -27,6 +27,9 @@ const config: Config = {
       backgroundImage: {
         'office': "url('../../public/office.png')",
       },
+      screens:{
+        'sm': '450px',
+      }
     },
   },
   plugins: [],
