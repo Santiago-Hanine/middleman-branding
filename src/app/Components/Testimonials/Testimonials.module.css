@@ -3,11 +3,11 @@
     animation: appear 2s ease-in-out;
 }
 .dissapear{
-    animation: slideRight 2s ease-in-out;
+    animation: dissapear 2s ease-in-out;
 }
 
 
-@keyframes slideRight {
+@keyframes dissapear {
     0% {
         opacity: 1;
     }

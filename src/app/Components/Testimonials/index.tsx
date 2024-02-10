@@ -28,11 +28,11 @@ const Testimonials = ({ testimonials }: TestimonialsProps) => {
 
     return (
         <>
-        <div className="bg-office h-screen bg-no-repeat bg-center flex justify-center items-center p-10">
-            <div className='relative bg-[rgba(255,255,255,0.85)] flex justify-center items-center h-[30rem] lg:h-[20rem] py-10 px-16'>
-                <Image className='absolute top-4 left-2' src={Quote} alt='Quote sign'/>
-                <p className={`${isVisible ? styles.appear : styles.dissapear} text-3xl text-black`}>{testimonials[currentTestimonialIndex]}</p>
-                <Image className='absolute top-4 right-2 ' src={QuoteReverse} alt='Quote sign'/>
+        <div className="bg-office bg-fixed 2xl:bg-local h-screen bg-no-repeat bg-center flex justify-center items-center mb-20 px-6 md:px-10">
+            <div className='relative bg-[rgba(255,255,255,0.85)] flex justify-center items-center h-[30rem] lg:h-[20rem] pt-20 pb-12 px-10 md:px-16'>
+                <Image data-aos="fade-up"  data-aos-duration="300" className='absolute top-4 left-2' src={Quote} alt='Quote sign'/>
+                    <p className={`${isVisible ? styles.appear : styles.dissapear} text-xl lg:text-3xl text-black font-black md:font-semibold`}>{testimonials[currentTestimonialIndex]}</p>
+                <Image data-aos="fade-up" data-aos-duration="600" className='absolute top-4 right-2 ' src={QuoteReverse} alt='Quote sign'/>
             </div>
         </div>
 </>
