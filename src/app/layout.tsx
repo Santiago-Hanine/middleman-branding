@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./Components/Navbar";
 import { AOSInit } from './aos'
+import Footer from "./Components/Footer";
 
 
 export const metadata: Metadata = {
@@ -26,6 +27,7 @@ export default function RootLayout({
       <body className="font-lato">
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
