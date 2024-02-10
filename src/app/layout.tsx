@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   keywords: "marketing digital, branding, creadores de contenido, estrategias digitales, agencia de marketing",
   category: "Marketing",
   openGraph:{
-    url: '/logo.jpg',
+    url: "https://middleman-branding.vercel.app/logo.jpg",
   },
 }
 
