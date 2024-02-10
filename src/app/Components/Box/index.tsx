@@ -20,13 +20,33 @@ const Box = ({eyebrow, title, description, link, children, rowReverse}:BoxProps)
         <div>
 
             <div className='w-full'>
-                <h2 data-aos="fade-up" data-aos-duration="400" className='font-black text-4xl mb-4'>
-                    {title}
-                </h2>
 
-                <p data-aos="fade-up" data-aos-duration="500" className='text-xl font-regular lg:max-w-[30ch]'>
-                    {description}
-                </p>
+                { rowReverse ? (
+                        <h2 data-aos="fade-left" data-aos-duration="400" className='font-black text-4xl mb-4'>
+                            {title}
+                        </h2>
+                    )
+                    :
+                    (
+                        <h2 data-aos="fade-right" data-aos-duration="400" className='font-black text-4xl mb-4'>
+                            {title}
+                        </h2>
+                    )
+                }
+
+                {
+                    rowReverse ? (
+                    <p data-aos="fade-left" data-aos-delay="300" data-aos-duration="500" className='text-left text-xl font-regular lg:max-w-[30ch]'>
+                        {description}
+                    </p>
+                    )
+                    :
+                    (
+                        <p data-aos="fade-right" data-aos-delay="300" data-aos-duration="500" className='text-xl font-regular lg:max-w-[30ch]'>
+                            {description}
+                        </p>
+                    )
+                }
             </div>
         </div>
 
