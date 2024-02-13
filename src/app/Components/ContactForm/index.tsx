@@ -1,10 +1,13 @@
 "use client";
 
 import React, { useState } from 'react';
+import Lottie from 'react-lottie';
+import sent from '../../../../public/sent.json'; 
 
 const ContactForm = () => {
 
   const [loading, setLoading] = useState(false);
+  const [formSent, setFormSent] = useState(false);
 
   const [formData, setFormData] = useState({
     userType: '',
@@ -51,7 +54,7 @@ const ContactForm = () => {
       if (response.ok) {
         console.log("Formulario enviado con éxito");
         setLoading(false);
-
+        setFormSent(true);
         setFormData({
           userType: '',
           name: '', 
@@ -64,6 +67,15 @@ const ContactForm = () => {
         console.log("Error al enviar el formulario");
         setLoading(false);
       }
+  };
+
+  const defaultOptions = {
+    loop: false,
+    autoplay: true,
+    animationData: sent,
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice'
+    }
   };
 
   return (
@@ -186,6 +198,29 @@ const ContactForm = () => {
         </button>
         </div>
       )}
+
+      {
+        !formSent && (
+          <div className="text-xl md:text-2xl font-black tracking-wider rounded-full mt-4 text-blue">
+            <div className='flex items-center'>
+              <p>Formulario enviado!</p>
+              
+              <div className='-ml-'>
+                <Lottie 
+                  options={defaultOptions}
+                  height={75} 
+                  width={75} 
+                />
+              </div>
+
+            </div>
+              <p className='text-blue text-lg'>
+                Pronto nos contactaremos contigo!
+              </p>
+            
+          </div>
+        )
+      }
     </form>
   );
 };
