@@ -21,7 +21,7 @@ const Box = ({eyebrow, title, description, link, children, rowReverse}:BoxProps)
 
             <div className='w-full'>
 
-                    <h2 data-aos={rowReverse ? "fade-left" : "fade-right"} data-aos-duration="400" className='font-black text-4xl mb-4'>
+                    <h2 data-aos="fade-up" data-aos-duration="400" className='font-black text-4xl mb-4'>
                             {title}
                     </h2>
 
