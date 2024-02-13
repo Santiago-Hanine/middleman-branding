@@ -15,7 +15,8 @@ const Navbar = () => {
     const menu = document.querySelector('#menu-mobile');
     menu?.classList.toggle('hidden');
     menu?.classList.toggle('flex');
-    document.body.classList.toggle('overflow-hidden, lg:overflow-auto');
+    document.body.classList.toggle('overflow-hidden');
+    document.body.classList.toggle('lg:overflow-auto');
   };
 
   const closeMenu = () => {
