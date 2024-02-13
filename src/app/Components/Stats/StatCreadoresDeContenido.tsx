@@ -27,7 +27,7 @@ export const StatCreadoresDeContenido = [
     {
         id: "04",
         titulo: "Compensación.",
-        texto: "Se compensará en base a la cantidad de visualizaciones que haya obtenido el video del creador. Se pagarán $1000 (mil pesos) por cada 4000 visualizaciones en los primeros 14 días, o hasta las 50.000 visualizaciones, lo que ocurra primero",
+        texto: "Se compensará en base a la cantidad de visualizaciones que haya obtenido el video del creador.",
         aosDelay: 700
     },
 ]
