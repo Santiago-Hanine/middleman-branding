@@ -13,6 +13,7 @@ const config: Config = {
       },
       colors: {
         'blue': '#023E8A',
+        'lightBlue': '#5081FE',
       },
       animation: {
         appear: 'appear 2s ease-in',
