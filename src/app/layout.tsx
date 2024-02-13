@@ -10,13 +10,14 @@ export const metadata: Metadata = {
   description: "MiddleMan Branding es una agencia de marketing digital líder que se especializa en potenciar tanto a creadores de contenido como a marcas. Impulsa tu éxito en línea con nuestras estrategias innovadoras y colaborativas.",
   keywords: "marketing digital, branding, creadores de contenido, estrategias digitales, agencia de marketing",
   category: "Marketing",
+  metadataBase: new URL("https://www.middlemanbranding.com.ar/"),
   openGraph: {
-    url: "https://middleman-branding.vercel.app",
+    url: "https://www.middlemanbranding.com.ar/",
     title: "MiddleMan Branding - Impulsa tu éxito en el mundo digital",
     description: "MiddleMan Branding es una agencia de marketing digital líder que se especializa en potenciar tanto a creadores de contenido como a marcas. Impulsa tu éxito en línea con nuestras estrategias innovadoras y colaborativas.",
     images: [
       {
-        url: "./opengraph.png",
+        url: "/opengraph.png",
         width: 1200,
         height: 630,
         alt: "MiddleMan Branding Logo",
@@ -26,11 +27,13 @@ export const metadata: Metadata = {
 };
 
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+console.log(metadata?.openGraph?.images ?? "");
   return (
     <html lang="en">
       <AOSInit />
