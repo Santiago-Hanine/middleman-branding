@@ -1,7 +1,7 @@
 export const Cards = [
     {
         title: "Diversificación de Audiencias",
-        text: "Al colaborar con una variedad de creadores de contenido, la marca puede conectar con diferentes segmentos de audiencia que podrían estar interesados en sus productos o servicios, lo que permite una diversificación efectiva de su base de clientes potenciales",
+        text: "Al colaborar con una variedad de creadores de contenido, la marca puede conectar con diferentes segmentos de audiencia que podrían estar interesados en sus productos o servicios, lo que permite una diversificación efectiva de su base de clientes potenciales.",
         src: '/audiencia.png',
         aosDelay: 100
     },
