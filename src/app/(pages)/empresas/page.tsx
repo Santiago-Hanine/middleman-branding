@@ -1,9 +1,6 @@
-import Box from "@/app/Components/Box";
-import Card from "@/app/Components/Card";
 import CardContainer from "@/app/Components/CardContainer";
 import Hero from "@/app/Components/Hero";
 import Stats from "@/app/Components/Stats";
-import Testimonials from "@/app/Components/Testimonials";
 import TextImage from "@/app/Components/TextImage";
 
 

@@ -1,7 +1,4 @@
-import Box from "@/app/Components/Box";
-import Card from "@/app/Components/Card";
 import Hero from "@/app/Components/Hero";
-import Testimonials from "@/app/Components/Testimonials";
 
 
 export default function Empresas() {
