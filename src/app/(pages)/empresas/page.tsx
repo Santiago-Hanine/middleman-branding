@@ -2,6 +2,7 @@ import Box from "@/app/Components/Box";
 import Card from "@/app/Components/Card";
 import CardContainer from "@/app/Components/CardContainer";
 import Hero from "@/app/Components/Hero";
+import Stats from "@/app/Components/Stats";
 import Testimonials from "@/app/Components/Testimonials";
 import TextImage from "@/app/Components/TextImage";
 
@@ -44,6 +45,11 @@ export default function CreadoresDeContenido() {
           imgAlt="Influencer publicando un post y recibiendo likes y comentarios"
           rowReverse={true}
           bgBlue={true}
+        />
+
+        <Stats
+        excerpt="¿Cómo lo hacemos?" 
+        title="Nuestro Proceso de trabajo" 
         />
         
     </main>
