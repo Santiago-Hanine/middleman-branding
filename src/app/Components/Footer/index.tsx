@@ -18,13 +18,13 @@ const Footer = () => {
                 </h3>
 
                 <div className="flex gap-4 text-5xl lg:text-4xl text-white mb-4 justify-center md:justify-start">
-                    <Link target="_blank" href="https://www.instagram.com/middleman.branding/">
+                    <Link aria-label="Abrir Instagram" target="_blank" href="https://www.instagram.com/middleman.branding/">
                         <FaInstagram />
                     </Link>
-                    <Link target="_blank" href="https://www.instagram.com/middleman.branding/">
+                    <Link aria-label="Abrir Twitter" target="_blank" href="https://www.instagram.com/middleman.branding/">
                         <FaXTwitter />
                     </Link>
-                    <Link target="_blank" href="https://www.instagram.com/middleman.branding/">
+                    <Link aria-label="Abrir Facebook" target="_blank" href="https://www.instagram.com/middleman.branding/">
                         <FaFacebook />
                     </Link>
                 </div>

@@ -46,7 +46,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <button className='lg:hidden border' onClick={handleMenu}>
+        <button aria-label="Abrir y Cerrar Menu" className='lg:hidden border' onClick={handleMenu}>
           <GiHamburgerMenu className='lg:hidden text-3xl m-2' />
         </button>
       </nav>
