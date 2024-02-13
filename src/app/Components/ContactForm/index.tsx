@@ -200,7 +200,7 @@ const ContactForm = () => {
       )}
 
       {
-        !formSent && (
+        formSent && (
           <div className="text-xl md:text-2xl font-black tracking-wider rounded-full mt-4 text-blue">
             <div className='flex items-center'>
               <p>Formulario enviado!</p>
