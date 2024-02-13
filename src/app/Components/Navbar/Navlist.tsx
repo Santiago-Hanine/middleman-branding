@@ -5,10 +5,6 @@ interface Navlist {
 
 export const Navlist:Navlist[] = [
     {
-        name: "Servicios",
-        link: "/servicios",
-    },
-    {
         name: "Empresas",
         link: "/empresas",
     },

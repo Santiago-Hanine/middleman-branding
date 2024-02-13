@@ -20,7 +20,7 @@ export default function Home() {
           title="Maximiza el crecimiento de tu empresa con nuestras innovadoras estrategias de marketing digital"
           text="Nos dedicamos a potenciar el crecimiento de nuestros clientes y colaboradores, impulsando resultados tangibles en el mundo digital."
         />
-        <Box eyebrow="Emprendimientos" title="Destaca en el Mundo Digital" description="Te ofrecemos las herramientas y estrategias necesarias para destacar en el mundo digital." link="/emprendimientos">
+        <Box eyebrow="Emprendimientos" title="Destaca en el Mundo Digital" description="Te ofrecemos las herramientas y estrategias necesarias para destacar en el mundo digital." link="/empresas">
             <Card aosDuration={400} img='/safety.png' title='Autenticidad y credibilidad'/>
             <Card aosDuration={600} img='/chart.png' title='Aumento de exposición'/>
             <Card aosDuration={800} img='/heart.png' title='Potencial Viral'/>
