@@ -3,6 +3,8 @@ import "./globals.css";
 import Navbar from "./Components/Navbar";
 import { AOSInit } from './aos'
 import Footer from "./Components/Footer";
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 export const metadata: Metadata = {
@@ -33,7 +35,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-console.log(metadata?.openGraph?.images ?? "");
+
   return (
     <html lang="en">
       <AOSInit />
@@ -41,6 +43,8 @@ console.log(metadata?.openGraph?.images ?? "");
         <Navbar />
         {children}
         <Footer />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
