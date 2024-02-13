@@ -14,8 +14,6 @@ interface TestimonialsProps {
 }
 
 const Testimonials = ({ testimonials }: TestimonialsProps) => {
-    const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
-    const [isVisible, setIsVisible] = useState(true);
 
     const settings = {
         infinite: true,
@@ -27,18 +25,6 @@ const Testimonials = ({ testimonials }: TestimonialsProps) => {
         center:true,
         arrows: false,
     };
-
-    useEffect(() => {
-        const intervalId = setInterval(() => {
-            setIsVisible(false);
-            setTimeout(() => {
-                setCurrentTestimonialIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
-                setIsVisible(true);
-            }, 2000); // Wait for fade-out animation duration before changing the testimonial
-        }, 5000);
-
-        return () => clearInterval(intervalId);
-    }, [testimonials.length]);
 
     return (
         <>

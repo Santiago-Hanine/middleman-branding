@@ -1,10 +1,13 @@
 import Box from "@/app/Components/Box";
 import Card from "@/app/Components/Card";
+import CardContainer from "@/app/Components/CardContainer";
 import Hero from "@/app/Components/Hero";
 import Testimonials from "@/app/Components/Testimonials";
+import TextImage from "@/app/Components/TextImage";
 
 
-export default function Empresas() {
+
+export default function CreadoresDeContenido() {
 
   const testimonials = [
     "MiddleMan Branding ha sido una verdadera bendición para mi negocio. Gracias a su enfoque estratégico y su compromiso con el éxito de sus clientes, he podido aumentar significativamente mi presencia en línea y generar más ventas. ¡Altamente recomendado!",
@@ -18,25 +21,31 @@ export default function Empresas() {
     <main className=" max-w-[1500px] mx-auto">
         <Hero 
           bgImage={true}
-          title="Aprovecha tu Talento: La Plataforma que Potencia tus Ingresos y tu Marca Personal"
-          text="Explora una nueva manera de ganar dinero compartiendo el contenido que disfrutas crear"
+          title="Eleva tu Marketing: Maximizando Resultados con la Colaboración de Creadores de Contenido"
+          text="Nos comprometemos a promover el desarrollo de nuestros clientes y asociados, fomentando resultados concretos en el entorno digital."
         />
-      
-        <Box eyebrow="Emprendimientos" title="Destaca en el Mundo Digital" description="Te ofrecemos las herramientas y estrategias necesarias para destacar en el mundo digital." link="/emprendimientos">
-            <Card aosDuration={400} img='/safety.png' title='Autenticidad y credibilidad'/>
-            <Card aosDuration={600} img='/chart.png' title='Aumento de exposición'/>
-            <Card aosDuration={800} img='/heart.png' title='Potencial Viral'/>
-            <Card aosDuration={1000} img='/megaphone.png' title='Promociones orgánicas'/>
-        </Box>
 
-        <Box rowReverse={true} eyebrow="Creadores de Contenido" title="Impulsa tu presencia" description="Te ofrecemos la oportunidad de monetizar tus visualizaciones y aumentar tu visibilidad ante las marcas." link="/creadores-de-contenido">
-            <Card aosDuration={400} img='/money.png' title='Monetizá'/>
-            <Card aosDuration={600} img='/eye.png' title='Mayor visibilidad'/>
-            <Card aosDuration={800} img='/clock.png' title='Libérate de la búsqueda de marcas'/>
-            <Card aosDuration={1000} img='/checklist.png' title='Tareas simples, resultados significativos'/>
-        </Box>
+        <CardContainer title="Trabajar con nuestros creadores de contenido le genera a tu marca"/>
+
+        <TextImage 
+          title="¿Por qué trabajar con creadores de contenido?"
+          text="No es ningún secreto que el marketing de creadores de contenido es una de las principales estrategias para impulsar el retorno de la inversión en marketing. Sin embargo, es importante asociarse con personas que se alineen estrechamente con la visión y los valores de su marca ya que la autenticidad es fundamental para el éxito."
+          imgSrc="/statsSubiendo.png"
+          imgAlt="Persona trabajando en el medio mientras las estadisticas aumentan"
+          rowReverse={false}
+          bgBlue={false}
+        />
+
+        <TextImage 
+          title="¿Por qué Middleman?"
+          text="Dado que los consumidores confían cada vez más en las recomendaciones de personas reales en lugar del contenido de marcas en las redes sociales, su empresa puede abrirse a audiencias nuevas y ya comprometidas. Nuestra gran cantidad de microinfluencers en casi cualquier sector de nicho imaginable nos convierte en la opción número uno para las marcas que desean
+          impulsar su crecimiento online."
+          imgSrc="/influencer.png"
+          imgAlt="Influencer publicando un post y recibiendo likes y comentarios"
+          rowReverse={true}
+          bgBlue={true}
+        />
         
-        <Testimonials testimonials={testimonials}/>
     </main>
   );
 }
