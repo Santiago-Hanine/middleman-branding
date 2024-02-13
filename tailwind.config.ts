@@ -26,6 +26,7 @@ const config: Config = {
       },
       backgroundImage: {
         'office': "url('../../public/office.png')",
+        'officeHero': "url('../../public/office-hero.png')",
       },
       screens:{
         'sm': '450px',
