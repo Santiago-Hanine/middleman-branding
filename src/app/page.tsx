@@ -14,7 +14,7 @@ export default function Home() {
   ];
 
   return (
-    <main className="max-w-[1500px] mx-auto overflow-hidden">
+    <main className="max-w-[1500px] mx-auto">
         <Hero 
           bgImage={false} 
           title="Maximiza el crecimiento de tu empresa con nuestras innovadoras estrategias de marketing digital"
