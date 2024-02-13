@@ -24,7 +24,7 @@ const Navbar = () => {
       </Link>
 
       <nav>
-        <ul id='menu-mobile' className='hidden flex text-center lg:flex flex-col lg:flex-row items-start lg:items-center justify-start lg:static absolute lg:top-20 lg:left-0 h-screen bg-white lg:bg-transparent gap-20 lg:gap-10 z-50 w-full pl-8 pt-20 pb-20 lg:pt-0 lg:pl-0 lg:pb-0 text-3xl font-black lg:text-base'>
+        <ul id='menu-mobile' className='hidden flex text-center lg:flex flex-col lg:flex-row items-start lg:items-center justify-start lg:static absolute top-20 left-0 h-screen bg-white lg:bg-transparent gap-20 lg:gap-10 z-50 w-full pl-8 pt-20 pb-20 lg:pt-0 lg:pl-0 lg:pb-0 text-3xl font-black lg:text-base'>
           {Navlist.map((item, index) => (
             <li className='' key={index}>
               <Link onClick={handleMenu} href={item.link}>
