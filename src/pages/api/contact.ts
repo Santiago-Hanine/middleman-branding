@@ -15,8 +15,8 @@ export default async function Contact(req: NextApiRequest, res: NextApiResponse<
         port: 465,
         secure: true,
         auth: {
-            user: user,
-            pass: process.env.pass
+            user: "middlemanbrandingteam@gmail.com",
+            pass: "gluj wmxy hvyj szrh"
         }
     })
   
