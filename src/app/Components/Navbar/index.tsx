@@ -25,7 +25,7 @@ const Navbar = () => {
   }
 
   return (
-    <header className='flex top-0 items-center justify-between px-8 py-4 border-b-blue border-b h-20 w-full bg-white'>
+    <header className='flex z-50 top-0 items-center justify-between px-8 py-4 border-b-blue border-b h-20 w-full bg-white'>
       <Link onClick={closeMenu} href="/">
         <Image src={Logo} width={130} alt='MiddleMan Branding logo'/>
       </Link>
