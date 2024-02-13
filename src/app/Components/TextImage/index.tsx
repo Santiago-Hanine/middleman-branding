@@ -27,7 +27,7 @@ const TextImage = ({bgBlue, title, text, rowReverse, imgSrc, imgAlt}:TextImage) 
                     data-aos-delay="800"
                     src={imgSrc} 
                     alt={imgAlt} 
-                    width={700} 
+                    width={600} 
                     height={400}
                 />
         </div>

@@ -1,6 +1,7 @@
 import CardContainer from "@/app/Components/CardContainer";
 import Hero from "@/app/Components/Hero";
 import Stats from "@/app/Components/Stats";
+import { StatInfo } from "@/app/Components/Stats/StatInfo";
 import TextImage from "@/app/Components/TextImage";
 
 
@@ -47,7 +48,19 @@ export default function CreadoresDeContenido() {
         <Stats
         excerpt="¿Cómo lo hacemos?" 
         title="Nuestro Proceso de trabajo" 
-        />
+        >
+          {
+                StatInfo.map((stat, index) => (
+                    <div data-aos="fade-up" data-aos-delay={stat.aosDelay} className='flex flex-col gap-2' key={index}>
+                        <h4 className='text-lightBlue font-black text-4xl'>{stat.id}</h4>
+                        <h2 className='text-4xl font-black'>{stat.titulo}</h2>
+                        <p className=' text-gray-500/80 '>
+                            {stat.texto}
+                        </p>
+                    </div>
+                ))
+            }
+        </Stats>
         
     </main>
   );
