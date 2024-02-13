@@ -13,7 +13,7 @@ const CardContainer = ({ title }: CardContainerProps) => {
             <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-10'>
                 {Cards.map((card, index) => (
                     <div key={index} className={`relative ${(index) === 1 || (index) === 4 ? 'lg:mt-10' : ''}`}>
-                        <CardsWithText aosDuration={card.aosDuration} imgSrc={card.src} imgAlt={card.title} title={card.title} text={card.text} />
+                        <CardsWithText aosDelay={card.aosDelay} imgSrc={card.src} imgAlt={card.title} title={card.title} text={card.text} />
                     </div>
                 ))}
             </div>
