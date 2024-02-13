@@ -17,7 +17,7 @@ const TextImage = ({bgBlue, title, text, rowReverse, imgSrc, imgAlt}:TextImage) 
                     data-aos-delay="400"
                     >
                         <h2 className='text-3xl md:text-4xl lg:text-3xl font-black'>{title}</h2>
-                        <p className='text-lg w-11/12 leading-9'>
+                        <p className='text-lg lg:w-11/12 leading-9'>
                                 {text}
                         </p>
                 </div>
