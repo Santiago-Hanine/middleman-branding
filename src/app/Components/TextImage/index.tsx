@@ -12,7 +12,7 @@ interface TextImage {
 const TextImage = ({bgBlue, title, text, rowReverse, imgSrc, imgAlt}:TextImage) => {
     return (
         <div className={`${bgBlue ? "bg-blue text-white" : "bg-white"} ${rowReverse ? "flex-col lg:flex-row-reverse" : "flex-col lg:flex-row"} flex items-center gap-8 lg:gap-20 p-10 lg:p-28`}>
-                <div data-aos={rowReverse ? "fade-left" : "fade-right"} 
+                <div data-aos="fade-up" 
                     className="w-full flex flex-col gap-8"
                     data-aos-delay="400"
                     >
@@ -23,7 +23,7 @@ const TextImage = ({bgBlue, title, text, rowReverse, imgSrc, imgAlt}:TextImage) 
                 </div>
 
                 <Image 
-                    data-aos={rowReverse ? "fade-right" : "fade-left"}
+                    data-aos="fade-up"
                     data-aos-delay="800"
                     src={imgSrc} 
                     alt={imgAlt} 
