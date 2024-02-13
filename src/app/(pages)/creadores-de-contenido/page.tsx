@@ -1,4 +1,5 @@
 import Hero from "@/app/Components/Hero";
+import TextIcon from "@/app/Components/TextIcon";
 
 
 export default function Empresas() {
@@ -19,7 +20,10 @@ export default function Empresas() {
           text="Explora una nueva manera de ganar dinero compartiendo el contenido que disfrutas crear"
         />
       
-        
+        <TextIcon 
+          title="Crea y Gana: La Plataforma Definitiva para Creadores de Contenido"
+          subTitle="Una Nueva Forma De Maximizar Tus Ingresos"
+        />
     </main>
   );
 }
