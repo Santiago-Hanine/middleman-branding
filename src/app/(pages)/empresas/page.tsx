@@ -17,7 +17,7 @@ export default function CreadoresDeContenido() {
   ];
 
   return (
-    <main className=" max-w-[1500px] mx-auto">
+    <main>
         <Hero 
           bgImage={true}
           title="Eleva tu Marketing: Maximizando Resultados con la Colaboración de Creadores de Contenido"

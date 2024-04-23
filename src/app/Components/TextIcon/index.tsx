@@ -1,6 +1,7 @@
 import React from 'react'
 import { TextLists } from './TextLists';
 import Image from 'next/image';
+import Layout from '../Layout';
 
 interface TextIconProps {
     title: string;
@@ -9,7 +10,8 @@ interface TextIconProps {
 
 const TextIcon = ({title, subTitle}: TextIconProps) => {
   return (
-    <div className='py-10 px-10 lg:px-28 flex flex-col gap-8 lg:gap-16'>
+	<Layout>
+    <div className='py-10 px-10 lg:px-28 flex flex-col gap-8 lg:gap-16 lg:py-28'>
         <h2 className='text-2xl md:text-4xl lg:text-4xl lg:w-2/3 mx-auto font-black text-center'>
             {title}
         </h2>
@@ -39,6 +41,7 @@ const TextIcon = ({title, subTitle}: TextIconProps) => {
             </div>
         </div>
     </div>
+	</Layout>
   )
 }
 

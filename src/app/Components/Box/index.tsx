@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from '../Card'
 import Link from 'next/link'
+import Layout from '../Layout'
 
 interface BoxProps {
     eyebrow: string,
@@ -13,6 +14,7 @@ interface BoxProps {
 
 const Box = ({eyebrow, title, description, link, children, rowReverse}:BoxProps) => {
   return (
+	<Layout>
     <div className={`${rowReverse ? 'lg:flex-row-reverse from-[rgba(45,102,174,0.28)] to-blue' : 'lg:flex-row from-blue to-[rgba(45,102,174,0.28)]'} text-white flex flex-col justify-between lg:items-center my-20 relative mx-4 md:mx-12 lg:mx-24 rounded-[3rem] pt-24 pb-8 px-8 lg:p-8 bg-gradient-to-r gap-8`}>
             <h4 className={`absolute ${rowReverse ? 'top-6 right-8' : 'top-6 left-8'} text-xl font-black `}>
                 {eyebrow}
@@ -43,6 +45,7 @@ const Box = ({eyebrow, title, description, link, children, rowReverse}:BoxProps)
             </button>
         </Link>
     </div>
+	</ Layout>
   )
 }
 

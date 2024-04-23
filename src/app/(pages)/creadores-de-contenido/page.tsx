@@ -16,7 +16,7 @@ export default function Empresas() {
   ];
 
   return (
-    <main className=" max-w-[1500px] mx-auto">
+    <main>
         <Hero 
           bgImage={true}
           title="Aprovecha tu Talento: La Plataforma que Potencia tus Ingresos y tu Marca Personal"

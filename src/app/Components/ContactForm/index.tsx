@@ -79,7 +79,7 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="bg-white my-20 p-8 rounded-lg lg:w-1/2 mx-auto drop-shadow-lg">
+    <form onSubmit={handleSubmit} className="bg-white my-20 p-8 rounded-lg lg:w-1/2 mx-auto drop-shadow-lg lg:my-52">
       <h2 className="text-5xl font-bold mb-4 text-center">Contactanos</h2>
       <div className="mb-4">
         <label htmlFor="userType" className="block mb-2">Tipo de usuario:</label>

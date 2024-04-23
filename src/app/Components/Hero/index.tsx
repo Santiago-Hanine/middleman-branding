@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
+import Layout from '../Layout'
 
 interface HeroProps {
     bgImage: boolean,
@@ -9,8 +10,9 @@ interface HeroProps {
 
 const Hero = ({bgImage, title, text}:HeroProps) => {
   return (
-    <div className={`${bgImage ? "bg-officeHero bg-cover bg-no-repeat h-[calc(100vh-5rem)] text-white" : "" }`}>
-        <div className='h-full flex justify-center items-center'>
+    <div className={`${bgImage ? "bg-officeHero bg-cover bg-no-repeat text-white" : "" }`}>
+		<Layout>
+        <div className={`flex justify-center items-center h-[calc(100vh-5rem)] ${bgImage ? "" : "xl:h-[calc(80vh-5rem)]"}`}>
         <div className={`flex flex-col text-center ${bgImage ? "border-x-4 border-x-white px-4 md:pt-20 pt-24 pb-8 mx-4 md:mx-12 lg:mx-24 gap-10 md:gap-14" : "border-x-4 border-x-blue px-4 md:mt-20 mt-14 pt-8 pb-8 mx-4 md:mx-12 lg:mx-24 gap-10 md:gap-14"}`}>
 
         <h1 data-aos="fade-up" data-aos-duration="600" className='max-w-[55ch] mx-auto text-2xl md:text-4xl lg:text-5xl font-black'>
@@ -28,7 +30,7 @@ const Hero = ({bgImage, title, text}:HeroProps) => {
         </Link>
         </div>
         </div>
-
+</Layout>
     </div>
   )
 }

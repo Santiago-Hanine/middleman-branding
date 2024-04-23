@@ -7,7 +7,7 @@ import { testimonials } from "./Components/Testimonials/testimonials";
 export default function Home() {
 
   return (
-    <main className="max-w-[1500px] mx-auto">
+    <main>
         <Hero 
           bgImage={false} 
           title="Maximiza el crecimiento de tu empresa con nuestras innovadoras estrategias de marketing digital"
