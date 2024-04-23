@@ -28,13 +28,13 @@ const Testimonials = ({ testimonials }: TestimonialsProps) => {
 
     return (
         <>
-        <div className="bg-office bg-cover 2xl:bg-local h-screen pt-28 bg-no-repeat bg-center mb-20 px-6 md:px-10">
-            <div className='relative bg-[rgba(255,255,255,0.85)] h-[30rem] lg:h-[20rem] pt-20 pb-12 px-10 md:px-16 md:mt-96'>
+        <div className="bg-office bg-cover 2xl:bg-local py-48 bg-no-repeat bg-center mb-20 px-6 md:px-10">
+            <div className='relative bg-[rgba(255,255,255,0.85)] py-20 xl:py-28 pb-12 px-10 md:px-16'>
                 <Image data-aos="fade-up"  data-aos-duration="300" className='absolute top-4 left-2' src={Quote} alt='Quote sign'/>
                 <div className='slider-container'>
                     <Slider {...settings}>
                         {testimonials.map((testimonial, index) => (
-                            <div key={index} className="mt-10 sm:mt-16 md:mt-28 lg:mt-6 xl:mt-10 text-xl lg:text-3xl text-black font-black md:font-semibold">{testimonial}</div>
+                            <div key={index} className="mt-10 cursor-pointer text-xl lg:text-3xl text-black font-black md:font-semibold">{testimonial}</div>
                             ))}
                     </Slider>
                 </div>
